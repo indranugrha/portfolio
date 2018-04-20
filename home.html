@@ -1,0 +1,96 @@
+
+<!-- Put IE into quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Alfacart Store Application</title>
+<script src="http://10.234.152.250/aol_store_stg/public/javascript/jquery-1.5.1.min.js"></script>
+<script src="http://10.234.152.250/aol_store_stg/public/javascript/jquery-ui-1.8.11.custom.min.js"></script>
+<script src="http://10.234.152.250/aol_store_stg/public/javascript/jquery.raty.min.js"></script>
+<script src="http://10.234.152.250/aol_store_stg/public/javascript/jquery.DOMWindow.js"></script>
+<script src="http://10.234.152.250/aol_store_stg/public/javascript/global.js"></script>
+<script src="http://10.234.152.250/aol_store_stg/public/jquery.min.js"></script>
+
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<link type="text/css" href="css/menu.css" rel="stylesheet" />
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.menunya li').hover(
+    function ()
+    {
+        $('ul', this).slideDown("fast");
+    },
+    function ()
+    {
+        //hide submenu
+        $('ul', this).slideUp("fast");
+    });
+});
+</script>
+
+</head>
+
+<div class="line-header-aol-store"></div>
+
+<body>
+	<div id="header"><p class="head"><span class="online"></span></p>
+		<p class="pright">
+			Selamat Datang,<b><span class="uname">FAISAL ANWAR | <a href="#"><font color='#383d44'>Logout</font></a> </span></b>
+		</p>
+	</div>
+
+	<div class="menunya">
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#" id="current">Transaksi &#9662;</a>
+			<ul>
+				<li><a href="#">Terima Barang</a></li>
+				<li><a href="#">Penyerahan Barang</a></li>
+				<li><a href="pengiriman-barang.html">Pengiriman Barang<span class="circle">15</span></a></li>
+			</ul>
+			</li>
+			<li><a href="#" id="current">Report &#9662;</a>
+			<ul>
+				<li><a href="#">Belum di Ambil</a></li>
+				<li><a href="#">Sudah di Ambil</a></li>
+				<li><a href="report-pengiriman.html">Report Pengiriman</a></li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div id="container_wrapper">
+		<div id="container">
+			<h1>Home</h1>
+			<!-- start aji -->
+			<div class="row">
+				<div class="info-msg">
+					<div class="alerts">
+						<i class="fa fa-bell" aria-hidden="true"></i>
+					</div>
+					<div class="alerts-title">
+						<p class="title-alert">Pemberitahuan</p>
+					</div>
+					<div class="alerts-close">
+						<a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+					</div>
+					<div class="alerts-msg">
+						<a href="pengiriman-barang.html"><p>Ada 2 pesanan yang siap dikirim</p></a>
+						<a href="pengiriman-barang.html"><p>Ada 1 pesanan yang harus dikonfirmasi</p></a>
+					</div>
+				</div>	
+			</div>
+			<!-- end-->
+	    </div>
+	</div> <!-- end of container -->
+
+	<div id="footer">
+		Copyright &copy; PT Sumber Trijaya Lestari 2017	</div>
+
+</body>
+</html>
